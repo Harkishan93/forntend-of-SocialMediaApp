@@ -1,0 +1,66 @@
+.postshare{
+    display: flex;
+    gap:1rem;
+    background: white ;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.postshare >img{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+.postshare>div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+}
+.postshare>div>input{
+    background-color: rgb(228, 223, 223);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+}
+.postoption{
+    display: flex;
+    justify-content: space-around;
+}
+.option{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.option:hover{
+    cursor: pointer;
+}
+.psbutton{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+    width: 5rem;
+    height: 2rem;
+}
+.previewimage{
+    position: relative;
+}
+.previewimage>svg{
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    background-color: black;
+    color: aliceblue;
+}
+.previewimage>img{
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}

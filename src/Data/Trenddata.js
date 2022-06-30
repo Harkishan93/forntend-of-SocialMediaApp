@@ -1,0 +1,22 @@
+export const Trenddata= [
+    {
+        name:"reactJS",
+        shares:97
+    },
+    {
+        name:"mongoDB",
+        shares:80.5
+    },
+    {
+        name:"nodeJS",
+        shares:75.5
+    },
+    {
+        name:"php",
+        shares:72
+    },
+    {
+        name:"python",
+        shares:70
+    }
+]

@@ -1,0 +1,29 @@
+.logosearch{
+    display: flex;
+    gap: 0.75rem;
+}
+.logosearch img{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+.search{
+    display: flex;
+    background-color: rgb(230, 220, 216);
+    border-radius: 10px;
+    padding: 5px;
+}
+.search input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.sicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:indianred;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}

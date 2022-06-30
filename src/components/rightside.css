@@ -1,0 +1,16 @@
+.Rightside{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+.navicon{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.navicon>svg{
+    font-size: 20px;
+}
+.navicon>svg:first-child{
+  color: rgb(249, 117, 105);
+}

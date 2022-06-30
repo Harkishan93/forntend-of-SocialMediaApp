@@ -1,14 +1,36 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { configureStore } from '@reduxjs/toolkit'
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import signupReducer from './reducer/signupReducer';
+import { Provider,useDispatch} from 'react-redux';
+import loginReducer from './reducer/loginReducer';
+import uploadimageReducer from './reducer/uploadimageReducer';
+import { localUser } from "./reducer/loginReducer";
+
+const store = configureStore({
+  reducer:{
+    singup:signupReducer,
+    login:loginReducer,
+    image:uploadimageReducer
+  }
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={store}>
+    <BrowserRouter>
+       <Routes>
+        <Route path='*' element={<App />} />
+       </Routes>
+    </BrowserRouter>
+      
+  </Provider>
+   
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
